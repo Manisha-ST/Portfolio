@@ -1,0 +1,95 @@
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:"Poppins",sans-serif;background:#fff;color:#111;line-height:1.6}
+a{text-decoration:none;color:inherit}
+.section{padding:90px 10%}
+.light-section{background:#f7f7f7}
+header{position:sticky;top:0;z-index:1000;background:#fff;border-bottom:1px solid #e5e5e5}
+.navbar{max-width:1200px;margin:auto;padding:18px 30px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-size:24px;font-weight:700}
+.nav-links{list-style:none;display:flex;gap:25px}
+.nav-links a{font-size:14px;transition:.3s}
+.nav-links a:hover{opacity:.5}
+.hero{min-height:90vh;padding:70px 10%;display:flex;align-items:center;justify-content:space-between;gap:60px;max-width:1400px;margin:auto}
+.hero-content{max-width:700px}
+.hello{font-size:15px;letter-spacing:2px;margin-bottom:15px}
+.hero h1{font-size:70px;line-height:1.1;margin-bottom:15px}
+.hero h2{font-size:25px;font-weight:500;margin-bottom:25px}
+.hero-text{font-size:16px;max-width:650px;margin-bottom:30px;color:#333}
+.hero-buttons{display:flex;gap:15px}
+.btn{padding:13px 24px;border:1px solid #111;font-size:14px;transition:.3s}
+.dark-btn{background:#111;color:#fff}
+.dark-btn:hover{background:transparent;color:#111}
+.light-btn{background:#fff}
+.light-btn:hover{background:#111;color:#fff}
+.hero-card{width:350px;padding:40px 30px;border:1px solid #ddd;text-align:center;background:#fafafa;border-radius:20px}
+.profile-circle{width:150px;height:150px;margin:0 auto 25px;border-radius:50%;background:#111;display:flex;align-items:center;justify-content:center}
+.profile-circle span{color:#fff;font-size:45px;font-weight:600}
+.hero-card h3{font-size:20px}
+.hero-card p{font-size:13px;color:#555}
+.mini-line{width:50px;height:2px;background:#111;margin:20px auto}
+.card-text{font-style:italic}
+.section-title{text-align:center;margin-bottom:55px}
+.section-title p{font-size:12px;letter-spacing:3px;margin-bottom:10px}
+.section-title h2{font-size:36px}
+.about-content{max-width:800px;margin:auto}
+.about-card{background:#fff;padding:45px;border:1px solid #e0e0e0}
+.about-card h3{font-size:25px;margin-bottom:20px}
+.about-card p{margin-bottom:18px;color:#444}
+.skills-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:25px;max-width:1100px;margin:auto}
+.skill-card{border:1px solid #ddd;padding:30px;transition:.3s}
+.skill-card:hover{transform:translateY(-5px);box-shadow:0 10px 25px rgba(0,0,0,.08)}
+.skill-number{font-size:12px;color:#777;margin-bottom:20px}
+.skill-card h3{margin-bottom:25px}
+.tags{display:flex;flex-wrap:wrap;gap:8px}
+.tags span{background:#f1f1f1;padding:7px 12px;font-size:12px}
+.soft-skills{max-width:1000px;margin:auto;display:flex;justify-content:center;flex-wrap:wrap;gap:15px}
+.soft-item{padding:14px 22px;border:1px solid #111;font-size:14px}
+.project-card{max-width:1100px;margin:auto;display:grid;grid-template-columns:1.2fr 1fr;border:1px solid #ddd}
+.project-left{padding:50px}
+.project-label{font-size:11px;letter-spacing:2px;margin-bottom:15px}
+.project-left h2{font-size:42px;margin-bottom:5px}
+.project-left h3{font-size:18px;font-weight:500;margin-bottom:25px}
+.project-left p{color:#444;margin-bottom:15px}
+.project-right{background:#f5f5f5;padding:50px}
+.project-right h3{margin-bottom:25px}
+.project-right ul{list-style:none}
+.project-right li{padding:13px 0;border-bottom:1px solid #ddd;font-size:14px}
+.project-right li:before{content:"✓";margin-right:10px}
+.timeline{max-width:900px;margin:auto}
+.timeline-item{display:grid;grid-template-columns:180px 1fr;gap:40px;padding:30px 0;border-bottom:1px solid #ddd}
+.timeline-year{font-weight:600}
+.timeline-content h3{font-size:20px;margin-bottom:8px}
+.timeline-content p{font-size:14px;color:#555}
+.certificate-grid{max-width:1000px;margin:auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
+.certificate-card{padding:35px;border:1px solid #ddd}
+.certificate-card span{font-size:13px;color:#777}
+.certificate-card h3{margin-top:25px;margin-bottom:8px;font-size:20px}
+.certificate-card p{font-size:14px;color:#555}
+.contact-section{background:#111;color:#fff;padding:100px 10%;text-align:center}
+.contact-content{max-width:700px;margin:auto}
+.contact-content>p:first-child{font-size:12px;letter-spacing:3px}
+.contact-content h2{font-size:45px;margin:15px 0}
+.contact-description{color:#ccc;margin-bottom:35px}
+.contact-details{display:flex;justify-content:center;gap:15px}
+.contact-details a{border:1px solid #fff;padding:12px 25px;font-size:14px;transition:.3s}
+.contact-details a:hover{background:#fff;color:#111}
+footer{background:#fff;text-align:center;padding:25px;font-size:13px}
+@media(max-width:900px){.hero{flex-direction:column;text-align:center;padding-top:80px}.hero-content{display:flex;flex-direction:column;align-items:center}.project-card{grid-template-columns:1fr}}
+@media(max-width:700px){.navbar{flex-direction:column;gap:15px}.nav-links{gap:12px;flex-wrap:wrap;justify-content:center}.hero h1{font-size:45px}.hero h2{font-size:20px}.section{padding:70px 7%}.section-title h2{font-size:30px}.timeline-item{grid-template-columns:1fr;gap:10px}.project-left,.project-right{padding:30px}.contact-content h2{font-size:35px}.contact-details{flex-direction:column}}
+
+
+.contact-details .email-text{
+    border:none;
+    padding:12px 0;
+    margin:0;
+    color:#ffffff;
+    font-size:14px;
+}
+
+.contact-details .email-text a{
+    border:none;
+    padding:0;
+}
+
+.email-text{font-size:15px;color:#fff;margin:0;padding:12px 0;align-self:center}
